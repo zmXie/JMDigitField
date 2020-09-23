@@ -8,7 +8,7 @@
 ## Describe
 数字输入框，支持自定义样式
 
-![Flipboard playing multiple GIFs](https://github.com/zmXie/JMDigitField/raw/master/JMDigitField/JMDigitField.gif)
+![Flipboard playing multiple GIFs](https://github.com/zmXie/JMDigitField/raw/master/JMDigitField.gif)
 
 ## Example
 
