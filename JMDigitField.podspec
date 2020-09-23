@@ -32,11 +32,24 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'JMDigitField/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'JMDigitField' => ['JMDigitField/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'JMDigitField' => ['JMDigitField/Assets/**/*.{xcassets}','JMDigitField/Classes/**/*.{xib,html,storyboard,gif,mp3}']
+  }
+  
+  #  s.prefix_header_file = 'JMDigitField/Classes/General/Common/JMDigitField.pch'
+  #  s.subspec 'Action' do |action|
+  #      action.source_files = 'JMDigitField/Classes/Action/*'
+  #  end
+  #  s.subspec 'General' do |general|
+  #      general.subspec 'Audio' do |audio|
+  #          audio.source_files = 'JMDigitField/Classes/General/Audio/*'
+  #      end
+  #      general.subspec 'Category' do |category|
+  #          category.source_files = 'JMDigitField/Classes/General/Category/*'
+  #      end
+  #  end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Masonry'
 end

@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		091BEE705BBA39C4F5C1FE32 /* Pods-JMDigitField_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMDigitField_Example.debug.xcconfig"; path = "Target Support Files/Pods-JMDigitField_Example/Pods-JMDigitField_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3768F893570968BA93915CA8 /* JMDigitField.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JMDigitField.podspec; path = ../JMDigitField.podspec; sourceTree = "<group>"; };
+		3768F893570968BA93915CA8 /* JMDigitField.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JMDigitField.podspec; path = ../JMDigitField.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* JMDigitField_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMDigitField_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,12 +61,12 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840953A80C75D8A49DC16199 /* Pods-JMDigitField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMDigitField_Tests.release.xcconfig"; path = "Target Support Files/Pods-JMDigitField_Tests/Pods-JMDigitField_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		923DA5AFBC4B20CCA75E0BD1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		923DA5AFBC4B20CCA75E0BD1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B56DA5A538D4CD612E9C3F0F /* Pods-JMDigitField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMDigitField_Example.release.xcconfig"; path = "Target Support Files/Pods-JMDigitField_Example/Pods-JMDigitField_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BD6DB7460607BCB971BC03A2 /* Pods-JMDigitField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JMDigitField_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JMDigitField_Tests/Pods-JMDigitField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C2C43DC3423349AA20520949 /* Pods_JMDigitField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMDigitField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AC359B93D940A1F96AD1B1 /* Pods_JMDigitField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JMDigitField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF884DE6B722E25EDEC62D7C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FF884DE6B722E25EDEC62D7C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				BD6DB7460607BCB971BC03A2 /* Pods-JMDigitField_Tests.debug.xcconfig */,
 				840953A80C75D8A49DC16199 /* Pods-JMDigitField_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = zmXie;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -303,10 +306,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JMDigitField_Example/Pods-JMDigitField_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JMDigitField/JMDigitField.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JMDigitField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -494,12 +499,15 @@
 			baseConfigurationReference = 091BEE705BBA39C4F5C1FE32 /* Pods-JMDigitField_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JMDigitField/JMDigitField-Prefix.pch";
 				INFOPLIST_FILE = "JMDigitField/JMDigitField-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -510,12 +518,15 @@
 			baseConfigurationReference = B56DA5A538D4CD612E9C3F0F /* Pods-JMDigitField_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JMDigitField/JMDigitField-Prefix.pch";
 				INFOPLIST_FILE = "JMDigitField/JMDigitField-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};

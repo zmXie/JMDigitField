@@ -5,6 +5,11 @@
 [![License](https://img.shields.io/cocoapods/l/JMDigitField.svg?style=flat)](https://cocoapods.org/pods/JMDigitField)
 [![Platform](https://img.shields.io/cocoapods/p/JMDigitField.svg?style=flat)](https://cocoapods.org/pods/JMDigitField)
 
+## Describe
+数字输入框，支持自定义样式
+
+![Flipboard playing multiple GIFs](https://github.com/zmXie/JMDigitField/raw/master/JMDigitField/JMDigitField.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

@@ -1,0 +1,23 @@
+PODS:
+  - JMDigitField (0.1.0):
+    - Masonry
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - JMDigitField (from `../`)
+
+SPEC REPOS:
+  https://cdn.cocoapods.org/:
+    - Masonry
+
+EXTERNAL SOURCES:
+  JMDigitField:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JMDigitField: aa1fc8e2f2be22ff9cbd0aa516f03bf09876c71b
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 2c1c0e248ce5e3060fe5d63b793f08784fa43988
+
+COCOAPODS: 1.9.1
